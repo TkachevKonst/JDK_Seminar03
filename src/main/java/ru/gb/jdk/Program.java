@@ -12,7 +12,7 @@ public class Program {
        Integer[] arr1 = {1,2,3,5,6};
        Integer[] arr2 = {11,2,5,8,9};
        String[] strings = {"d","h","h","f"};
-       String[] strings1 = {"3","j","hflkgjh","o"};
+       String[] strings1 = {"3","j","hflkgjh" ,"o"};
 
        System.out.println(MyArray.compareArrays(arr1,arr2));
        System.out.println(MyArray.compareArrays(arr1,strings));
