@@ -11,9 +11,9 @@ public class MyArray {
     public static <T, V> boolean compareArrays(T[] arr1, V[] arr2) {
 
         int count = 0;
-        if ( arr1!=null && arr2!=null && arr1.length == arr2.length) {
+        if (arr1 != null && arr2 != null && arr1.length == arr2.length) {
             for (int i = 0; i < arr1.length; i++) {
-                if (arr1[i].getClass() == arr2[i].getClass()){
+                if (arr1[i].getClass().equals(arr2[i].getClass())) {
                     count++;
                 }
             }
