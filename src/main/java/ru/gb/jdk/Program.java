@@ -7,9 +7,9 @@ import ru.gb.jdk.Task3.Pair;
 public class Program {
 
     public static void main(String[] args) {
-//        Calculator.divide(1.5, 2);
+        System.out.println(Calculator.divide(1.5, 2));
 
-       Integer[] arr1 = {1,2,3,5,6};
+        Integer[] arr1 = {1,2,3,5,6};
        Integer[] arr2 = {11,2,5,8,9};
        String[] strings = {"d","h","h","f"};
        String[] strings1 = {"3","j","hflkgjh" ,"o"};

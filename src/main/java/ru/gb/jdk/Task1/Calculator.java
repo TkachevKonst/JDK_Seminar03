@@ -10,23 +10,23 @@ package ru.gb.jdk.Task1;
 
 public class Calculator {
 
-    public static <T extends Number> void sum(T a, T b) {
-        System.out.println(a.doubleValue() + b.doubleValue());
+    public static <T extends Number> double sum(T a, T b) {
+        return a.doubleValue() + b.doubleValue();
     }
 
-    public static <T extends Number> void  subtract (T a, T b){
-        System.out.println(a.doubleValue() - b.doubleValue());
+    public static <T extends Number> double  subtract (T a, T b){
+        return a.doubleValue() - b.doubleValue();
     }
 
-    public static <T extends Number> void multiply (T a, T b){
-        System.out.println(a.doubleValue() * b.doubleValue());
+    public static <T extends Number> double multiply (T a, T b){
+        return a.doubleValue() * b.doubleValue();
     }
 
 
-    public static <T extends Number> void divide (T a, T b){
+    public static <T extends Number> double divide (T a, T b){
         if(b.equals(0)){
-            System.out.println("Деление на ноль не возможно");
-        }else System.out.println(a.doubleValue() / b.doubleValue());
+            throw new ArithmeticException();
+        }return a.doubleValue() / b.doubleValue();
     }
 
 
